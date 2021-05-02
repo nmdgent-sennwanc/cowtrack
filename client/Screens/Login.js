@@ -70,7 +70,7 @@ const LoginScreen = ({ navigation }) => {
     <>
       <View style={styles.wrapper}>
         {/* BODY */}
-        <ScrollView style={styles.container}>
+        <View style={styles.container}>
           <View style={styles.content}>
             <Logo/>
             <View style={styles.new}>
@@ -79,7 +79,7 @@ const LoginScreen = ({ navigation }) => {
                 </TouchableOpacity>
             </View>
           </View>
-        </ScrollView>
+        </View>
       </View>
     </>
   )
@@ -103,10 +103,13 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: colors['white'],
     fontFamily: 'Roboto',
+    justifyContent: 'center',
+    flex: 1,
   }, 
 
   content: {
     padding: 30,
+    alignItems: 'center',
   },
 
   logo:{
@@ -130,6 +133,7 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 10,
     marginVertical: 20,
     borderRadius: 20,
     backgroundColor: colors['brown'],
