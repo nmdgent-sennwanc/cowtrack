@@ -1,0 +1,122 @@
+import {AnchorController} from "../controller/AnchorController";
+import {CowController} from "../controller/CowController";
+import {EventController} from "../controller/EventController";
+import {FarmController} from "../controller/FarmController";
+import {TagController} from "../controller/TagController";
+
+export const Routes = [{
+    method: "get",
+    route: "/anchors",
+    controller: AnchorController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/anchors/:id",
+    controller: AnchorController,
+    action: "one"
+}, {
+    method: "put",
+    route: "/anchors",
+    controller: AnchorController,
+    action: "save"
+}, {
+    method: "delete",
+    route: "/anchors/:id",
+    controller: AnchorController,
+    action: "remove"
+}, {
+    method: "get",
+    route: "/cows",
+    controller: CowController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/cows/:cownumber",
+    controller: CowController,
+    action: "one"
+}, {
+    method: "post",
+    route: "/cows",
+    controller: CowController,
+    action: "save"
+}, {
+    method: "delete",
+    route: "/cows/:cowId",
+    controller: CowController,
+    action: "remove"
+}, {
+    method: "get",
+    route: "/events",
+    controller: EventController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/events/:id",
+    controller: EventController,
+    action: "one"
+}, {
+    method: "post",
+    route: "/events",
+    controller: EventController,
+    action: "save"
+}, {
+    method: "delete",
+    route: "/events/:id",
+    controller: EventController,
+    action: "remove"
+}, {
+    method: "get",
+    route: "/farms",
+    controller: FarmController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/farms/:id",
+    controller: FarmController,
+    action: "one"
+}, {
+    method: "post",
+    route: "/farms",
+    controller: FarmController,
+    action: "save"
+},{
+    method: "put",
+    route: "/farms/:id",
+    controller: FarmController,
+    action: "update"
+}, {
+    method: "delete",
+    route: "/farms/:id",
+    controller: FarmController,
+    action: "remove"
+}, {
+    method: "get",
+    route: "/tags",
+    controller: TagController,
+    action: "all"
+}, {
+    method: "get",
+    route: "/tags/empty",
+    controller: TagController,
+    action: "emptytags"
+}, {
+    method: "get",
+    route: "/tags/one",
+    controller: TagController,
+    action: "one"
+}, {
+    method: "post",
+    route: "/tags",
+    controller: TagController,
+    action: "save"
+}, {
+    method: "put",
+    route: "/tags/:id",
+    controller: TagController,
+    action: "update"
+}, {
+    method: "delete",
+    route: "/tags/:id",
+    controller: TagController,
+    action: "remove"
+}];
